@@ -1,0 +1,32 @@
+{
+    "version": "1.0",
+    "save_json_path": "./config.json",
+    "original_label_path": "./label/trainLabels.csv",
+    "train_dataset_dir": "./dataset/train",
+    "test_dataset_dir": "./dataset/train",
+    "img_dir": "./img/",
+    "train_label_dir": "./label",
+    "test_label_dir": "./label",
+    "temp_label_dir": "./label",
+    "train_result_dir": "./result",
+    "train_glcm_dir": "./result",
+    "test_result_dir": "./result",
+    "test_glcm_dir": "./result",
+    "num_of_type": 9,
+    "num_of_data_per_type": 10000,
+    "train_ratio": 0.7,
+    "nbits": 256,
+    "angles": [
+        0,
+        0.7853981633974483,
+        1.5707963267948966,
+        2.356194490192345
+    ],
+    "distances": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "num_of_example_img": 10
+}

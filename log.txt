@@ -1,0 +1,173 @@
+# 对所有数据进行训练和测试的结果
+----------------------------------------------------------------
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS E:\BSproject> python -u "e:\BSproject\deal_data.py"
+Index(['Id', 'Class'], dtype='object')
+num_of_train_data_per_type:  7000
+num_of_test_data_per_type 3000
+PS E:\BSproject> conda activate base
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+Calculate all train data's glcm value......
+#################################################################################################[-0.13679791 -0.13679495 -0.13677989 
+ 0.93344469 -0.12726762  0.01457235
+ -0.13677838 -0.13680335 -0.13679495]
+Calculate all test data's glcm value......
+###########################################################################################Done! Runing time:  683.826868057251       
+[-0.13679791 -0.13679495 -0.13677989  0.93344469 -0.12726762  0.01457235
+ -0.13677838 -0.13680335 -0.13679495]
+correct_count: %d 1152
+accuarcy: %f 0.5754245754245755
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.13679791 -0.13679495 -0.13677989  0.93344469 -0.12726762  0.01457235
+ -0.13677838 -0.13680335 -0.13679495]
+correct_count: %d 1151
+accuarcy: %f 0.5749250749250749
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.13679791 -0.13679495 -0.13677989  0.93344469 -0.12726762  0.01457235
+ -0.13677838 -0.13680335 -0.13679495]
+correct_count: %d 1143
+accuarcy: %f 0.570929070929071
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.13679791 -0.13679495 -0.13677989  0.93344469 -0.12726762  0.01457235
+ -0.13677838 -0.13680335 -0.13679495]
+correct_count: %d 1146
+accuarcy: %f 0.5724275724275725
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.13679791 -0.13679495 -0.13677989  0.93344469 -0.12726762  0.01457235
+ -0.13677838 -0.13680335 -0.13679495]
+correct_count: %d 1145
+accuarcy: %f 0.5719280719280719
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.13679791 -0.13679495 -0.13677989  0.93344469 -0.12726762  0.01457235
+ -0.13677838 -0.13680335 -0.13679495]
+correct_count: %d 1151
+accuarcy: %f 0.5749250749250749
+PS E:\BSproject>   
+
+# PCA降维
+------------------------------------------------
+
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+Calculate all train data's glcm value......
+#################################################################################################[-0.1750569   0.73806659 -0.16694096 
+-0.04592206 -0.17507692 -0.17506975]
+Done! Runing time:  3309.7167613506317    
+Calculate all test data's glcm value......
+###########################################################################################Done! Runing time:  682.6353256702423
+[-0.1750569   0.73806659 -0.16694096 -0.04592206 -0.17507692 -0.17506975]
+correct_count: %d 1172
+accuarcy: %f 0.5854145854145855
+
+# 加上多个距离
+------------------------------------------------
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+Calculate all train data's glcm value......
+#################################################################################################[-0.1750569   0.73806659 -0.16694096 
+-0.04592206 -0.17507692 -0.17506975]
+Done! Runing time:  3551.328704357147
+Calculate all test data's glcm value......
+###########################################################################################Done! Runing time:  697.4262547492981      
+[-0.1750569   0.73806659 -0.16694096 -0.04592206 -0.17507692 -0.17506975]
+correct_count: %d 1181
+PS E:\BSproject> conda activate base
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+Calculate all train data's glcm value......
+Done! Runing time:  7651.762669086456
+Calculate all test data's glcm value......
+###########################################################################################Done! Runing time:  1595.1768555641174     
+[-0.1747563   0.7382582  -0.16665332 -0.04730387 -0.17477769 -0.17476702]
+correct_count: %d 1201
+accuarcy: %f 0.639000999000998
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.1747563   0.7382582  -0.16665332 -0.04730387 -0.17477769 -0.17476702]
+correct_count: %d 1039
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.1747563   0.7382582  -0.16665332 -0.04730387 -0.17477769 -0.17476702]
+accuarcy: %f 0.5369630369630369
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.1747563   0.7382582  -0.16665332 -0.04730387 -0.17477769 -0.17476702]
+accuarcy: %f 0.5999000999000998
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.1747563   0.7382582  -0.16665332 -0.04730387 -0.17477769 -0.17476702]
+accuarcy: %f 0.4905094905094905
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.1747563   0.7382582  -0.16665332 -0.04730387 -0.17477769 -0.17476702]
+correct_count: %d 962
+accuarcy: %f 0.4805194805194805
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.1747563   0.7382582  -0.16665332 -0.04730387 -0.17477769 -0.17476702]
+correct_count: %d 866
+accuarcy: %f 0.4325674325674326
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+'nbits': 256,
+'angles': [0, np.pi / 4, np.pi / 2, np.pi * 3 / 4],
+'distances': [1, 2],
+'num_of_example_img': 10,
+correct_count: %d 1508
+accuarcy: %f 0.7240934059
+
+#### 随机森林
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+[-0.12829851 -0.11837144 -0.13458571  0.74330349 -0.18558755 -0.17646028]
+(7603, 1)
+<memory at 0x000001BDACE3E380>
+The max score: 0.8771228771228772 N_estimators: 18.542457542457544
+
+PS E:\BSproject> python -u "e:\BSproject\train.py"
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+Calculate all train data's glcm value......
+#################################################################################################[-0.12614843 -0.12192658 -0.13748248  0.74356147 -0.18205362 -0.17595037]
+Done! Runing time:  152.84396886825562
+Calculate all test data's glcm value......
+###########################################################################################Done! Runing time:  24.259794235229492
+[-0.12614843 -0.12192658 -0.13748248  0.74356147 -0.18205362 -0.17595037]
+(7603, 1)
+<memory at 0x00000217B7F2C790>
+The max score: 0.9010989010989011 N_estimators: 19.021978021978022
+
+Parameter Setting......
+['01kcPWA9K2BOxQeS5Rju', 1]
+Calculate all train data's glcm value......
+#################################################################################################[-0.02867834 -0.20148426 -0.20148426  0.72806881 -0.22113294 -0.07528901]
+Done! Runing time:  10069.380594968796
+Calculate all test data's glcm value......
+###########################################################################################Done! Runing time:  2161.74023938179
+[-0.02867834 -0.20148426 -0.20148426  0.72806881 -0.22113294 -0.07528901]
+(7603, 1)
+<memory at 0x000001696C71E790>
+The max score: 0.9375624375624375 N_estimators: 19.75124875124875
